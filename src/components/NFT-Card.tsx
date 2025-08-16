@@ -10,11 +10,7 @@ import React from "react";
     { id: 7, image:'/images.png', price: 24 },
     { id: 8, image:'/images.png', price: 26 },
   ];
-//   interface NFTItem {
-//   id: number;
-//   image: string;
-//   price: number;
-// }
+
 
 
 
@@ -59,7 +55,7 @@ const NFTCard: React.FC= () => {
               <span className="">{item.price} SOL</span>
              </div>
 
-                          </div>
+               </div>
         ))}
     </div>
  </div>

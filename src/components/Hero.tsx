@@ -6,23 +6,19 @@ const Hero: React.FC = () => {
     <div className="w-full">
         <section className="relative h-screen bg-black text-white flex flex-col items-center justify-center text-center font-orbitron">
   <div className="absolute top-5 w-full px-5 flex justify-between items-center">
-        {/* Top-left: EHYZ */}
+       
       <div className="absolute font-bold top-5 left-5 text-xl  tracking-wider">
         EHYZ
       </div>
-
-      {/* Top-center: Leaderboard */}
-      <div className="absolute uppercase top-5 left-1/2 -translate-x-1/2  text-xl tracking-wider">
+       <div className="absolute uppercase top-5 left-1/2 -translate-x-1/2  text-xl tracking-wider">
         Leaderboard
       </div>
-
-      {/* Top-right: CONNECT WALLET with box */}
-      <div className="absolute top-5 right-5 border border-white px-2 py-1 text-xs tracking-wider">
+     <div className="absolute top-5 right-5 border border-white px-2 py-1 text-xs tracking-wider">
         CONNECT WALLET
       </div>
   </div>
 
-      {/* Small green side labels (example placements) */}
+      {/* Small green side */}
       <div className="absolute top-1/4 left-10 text-green-400 text-[10px]">
         X: 192 Y: 476
       </div>
@@ -33,18 +29,17 @@ const Hero: React.FC = () => {
         WGT: Dynamic Label
       </div>
 
-      {/* Title */}
+      {/* hero */}
       <h1 className="text-2xl font-orbitron md:text-4xl md:font-extrabold uppercase tracking-widest font-bold mb-4">
         EXPLORE NFT COLLECTION
       </h1>
 
-      {/* Subtitle */}
       <p className="max-w-xl font-orbitron text-base md:text-lg leading-relaxed mb-6">
         A collection of 525 highly-fashionable NFTs on the ETH blockchain. Unique,
         metaverse-ready, and designed to benefit their holders.
       </p>
 
-      {/* Button */}
+     
       <button 
   className="
     font-orbitron px-8 py-3
@@ -64,15 +59,9 @@ const Hero: React.FC = () => {
       {/* Background grid */}
       <div className="absolute inset-0 bg-[url('/grid-bg.png')] bg-bottom bg-cover opacity-40 -z-10"></div>
 
-      {/* Bottom-left designer credit */}
-      {/* <div className="absolute bottom-5 left-5 text-yellow-400 text-sm">
-        saeed saiyed
-      </div> */}
-
-     
     </section>
     
-      {/* Full-width Image */}
+      {/* Image */}
       <img 
         src={heroImg}
         alt="Hero visual" 

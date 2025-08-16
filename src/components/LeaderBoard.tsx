@@ -24,7 +24,7 @@ const Leaderboard: React.FC = () => {
       <div className="w-full max-w-3xl bg-gray-900 border border-blue-500 rounded-lg p-4 space-y-4 ">
         {teams.map((team, idx) => (
           <div key={team.id}>
-            <div className="flex items-center justify-between py-2 px-4 text-white">
+            <div className="grid grid-cols-[1fr_auto_auto] items-center py-2 px-4 text-white">
               <div className="flex items-center gap-3">
                 <img  src={team.logo} alt={team.name} className="w-10 h-8" />
                 <span className="font-bold">{team.name}</span>
@@ -32,9 +32,16 @@ const Leaderboard: React.FC = () => {
               <div className="flex items-center gap-4">
                <div className="flex gap-1 items-center">
                  <span>{team.kills}</span>
-                <span><img src="/public/iconImg.png" className="h-10 w-6" alt="" /></span>
+                <span><img src="/iconImg.png" className="h-10 w-6" alt="" /></span>
                </div>
-                {team.sol && <span>{team.sol} SOL</span>}
+              
+        <div className="text-right w-24">
+            {team.sol ? (
+          <span className="tabular-nums">{team.sol} SOL</span>
+               ) : (
+               <span>&nbsp;</span>
+    )}
+  </div>
               </div>
             </div>
             {idx < teams.length - 1 && <hr className="border-red-500" />}
