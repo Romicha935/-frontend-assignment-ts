@@ -4,6 +4,10 @@
   padding: 2rem;
   text-align: center;
 }
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
 
 .logo {
   height: 6em;

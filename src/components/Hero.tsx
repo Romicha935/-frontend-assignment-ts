@@ -5,13 +5,14 @@ const Hero: React.FC = () => {
   return (
     <div className="w-full">
         <section className="relative h-screen bg-black text-white flex flex-col items-center justify-center text-center font-orbitron">
-      {/* Top-left: EHYZ */}
+  <div className="absolute top-5 w-full px-5 flex justify-between items-center">
+        {/* Top-left: EHYZ */}
       <div className="absolute font-bold top-5 left-5 text-xl  tracking-wider">
         EHYZ
       </div>
 
       {/* Top-center: Leaderboard */}
-      <div className="absolute top-5 left-1/2 -translate-x-1/2  text-xl tracking-wider">
+      <div className="absolute uppercase top-5 left-1/2 -translate-x-1/2  text-xl tracking-wider">
         Leaderboard
       </div>
 
@@ -19,6 +20,7 @@ const Hero: React.FC = () => {
       <div className="absolute top-5 right-5 border border-white px-2 py-1 text-xs tracking-wider">
         CONNECT WALLET
       </div>
+  </div>
 
       {/* Small green side labels (example placements) */}
       <div className="absolute top-1/4 left-10 text-green-400 text-[10px]">
@@ -32,20 +34,30 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Title */}
-      <h1 className="text-4xl md:text-6xl tracking-widest font-bold mb-4">
+      <h1 className="text-2xl font-orbitron md:text-4xl md:font-extrabold uppercase tracking-widest font-bold mb-4">
         EXPLORE NFT COLLECTION
       </h1>
 
       {/* Subtitle */}
-      <p className="max-w-xl text-base md:text-lg leading-relaxed mb-6">
+      <p className="max-w-xl font-orbitron text-base md:text-lg leading-relaxed mb-6">
         A collection of 525 highly-fashionable NFTs on the ETH blockchain. Unique,
         metaverse-ready, and designed to benefit their holders.
       </p>
 
       {/* Button */}
-      <button className="px-6 py-2 border border-white hover:bg-white hover:text-black transition-all duration-300">
-        START GAME
-      </button>
+      <button 
+  className="
+    font-orbitron px-8 py-3
+    text-yellow-300 border border-wh  uppercase tracking-wider 
+    transition-all duration-300
+    hover:bg-yellow-300 hover:text-black
+    hover:shadow-[0_0_10px_#facc15,0_0_20px_#facc15]
+  "
+  style={{ clipPath: "polygon(0 0, 95% 0, 100% 20%, 100% 100%, 0 100%)" }}
+>
+  Start Game
+</button>
+
 
      
 

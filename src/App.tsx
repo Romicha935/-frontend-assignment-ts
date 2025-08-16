@@ -1,15 +1,22 @@
+import React from "react";
+import NFTCard from "./components/NFT-Card";
+import Hero from "./components/Hero";
+import Leaderboard from "./components/LeaderBoard";
+import Footer from "./components/Footer";
+// import NFTCard from "./NFTCard";
 
-import './App.css'
-import Hero from './components/Hero'
+const App: React.FC = () => {
 
-function App() {
-  
 
   return (
-    <div>
-     <Hero/>
+    <div className="px-10 bg-black">
+      <Hero/>
+    <NFTCard />
+    <Leaderboard/>
+    <Footer/>
     </div>
-  )
-}
 
-export default App
+  );
+};
+
+export default App;
