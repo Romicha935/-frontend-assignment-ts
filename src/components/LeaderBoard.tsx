@@ -24,8 +24,8 @@ const Leaderboard: React.FC = () => {
       <div className="w-full max-w-3xl bg-gray-900 border border-blue-500 rounded-lg p-4 space-y-4 ">
         {teams.map((team, idx) => (
           <div key={team.id}>
-            <div className="grid grid-cols-[1fr_auto_auto] items-center py-2 px-4 text-white">
-              <div className="flex items-center gap-3">
+            <div className="grid grid-cols-[1fr_auto_auto] items-center py-2 px- cursor-pointer text-white">
+              <div className="flex items-center  gap-3">
                 <img  src={team.logo} alt={team.name} className="w-10 h-8" />
                 <span className="font-bold">{team.name}</span>
               </div>
