@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <div className="w-full">
         <section className="relative h-screen bg-black text-white flex flex-col items-center justify-center text-center font-orbitron">
-  <div className="absolute top-5 w-full px-5 flex justify-between items-center">
+  <div className="absolute cursor-pointer top-5 w-full px-5 flex justify-between items-center">
        
       <div className="absolute font-bold top-5 left-5 text-xl  tracking-wider">
         EHYZ
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
     font-orbitron px-8 py-3
     text-yellow-300 border border-wh  uppercase tracking-wider 
     transition-all duration-300
-    hover:bg-yellow-300 hover:text-black
+    hover:bg-yellow-300 cursor-pointer hover:text-black
     hover:shadow-[0_0_10px_#facc15,0_0_20px_#facc15]
   "
   style={{ clipPath: "polygon(0 0, 95% 0, 100% 20%, 100% 100%, 0 100%)" }}
