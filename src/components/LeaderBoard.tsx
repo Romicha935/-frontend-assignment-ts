@@ -10,10 +10,10 @@ type Team = {
 };
 
 const teams: Team[] = [
-  { id: 1, name: "REALTECH", logo: "/public/cropped-PRO-REAL-TECH-LOGO-1-removebg-preview.png", kills: 17 },
-  { id: 2, name: "PSYCHO H2O", logo: "/public/icon-2.png", kills: 15, sol: 30 },
-  { id: 3, name: "SSTS", logo: "/public/icon3.png", kills: 8, sol: 25 },
-  { id: 4, name: "38TH AMA", logo: "/public/icon4.png", kills: 11, sol: 25 },
+  { id: 1, name: "REALTECH", logo: "/cropped-PRO-REAL-TECH-LOGO-1-removebg-preview.png", kills: 17 },
+  { id: 2, name: "PSYCHO H2O", logo: "/icon-2.png", kills: 15, sol: 30 },
+  { id: 3, name: "SSTS", logo: "/icon3.png", kills: 8, sol: 25 },
+  { id: 4, name: "38TH AMA", logo: "/icon4.png", kills: 11, sol: 25 },
 ];
 
 const Leaderboard: React.FC = () => {
