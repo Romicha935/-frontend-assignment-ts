@@ -20,7 +20,7 @@ const NFTCard: React.FC= () => {
   return (
  <div className="bg-black pb-10 p-6">
     {/* menu Title */}
-    <div className="flex justify-around w-full items-center px-6 py-6 border-t border-b border-gray-100 my-2">
+    <div className="flex cursor-pointer justify-around w-full items-center px-6 py-6 border-t border-b border-gray-100 my-2">
     {/* Left */}
     <h3 className="text-white text-lg font-semibold uppercase tracking-wide">
       Rion
